@@ -5,10 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "times new roman", "Times New Roman", Times, serif, sans-serif;
-  background: #grey;
 }
 h1 {
   font-size: 50px;
+  padding: 10px 0;
   line-height: 64px;
   color: #ffffff;
 }
@@ -23,31 +23,32 @@ h3 {
   color: #ffffff;
 }
 h4 {
+  padding: 10px 0;
   font-size: 20px;
   line-height: 24px;
-  color: #51ff00;
+  color: #ffffff;
 }
 h6 {
   font-size: 16px;
   line-height: 20px;
-  color: #000;
+  color: #ffffff;
 }
 p {
-  font-size: 16px;
+  font-size: 17px;
   margin: 50px 0 20px 0;
-  color: rgb(255, 104, 104);
+  color: #ffffff;
+  padding: 0;
+  font-size: 15px;
 }
 .section {
-  padding: 40px 80px;
+  padding: 30px 80px;
 }
 .section-p1 {
   margin-bottom: 40px 80px;
 }
-.section-m1 {
-  margin: 40px 0px;
-}
+
 body {
-  background-color: #160e0eb7;
+  background-color: #ffffff;
   width: 100%;
   position: relative;
 }
@@ -68,6 +69,10 @@ body {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.06);
   height: 80px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 /** navigation bar */
 #navbar {
@@ -105,4 +110,46 @@ body {
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+
+/**home page hero section */
+#hero {
+  background-image: url("images/mojito1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+#hero h4 {
+  padding-bottom: 15px;
+}
+#hero h1 {
+  color: #088178;
+}
+#hero button {
+  background-image: url("images/button.jpg");
+  background-color: #088178;
+  border: none;
+  padding: 14px 80px 14px 65px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 0cm;
+  font-size: 15px;
+}
+#features .fe-box img {
+  padding: 20px 0;
+  width: 120px;
+  height: auto;
+}
+h6#free-delivery {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 }
